@@ -1,0 +1,11 @@
+let flipper = document.querySelector('.flipper');
+let isFlipped = false;
+
+setInterval(() => {
+    if (isFlipped) {
+        flipper.style.transform = 'rotateY(0deg)';
+    } else {
+        flipper.style.transform = 'rotateY(180deg)';
+    }
+    isFlipped = !isFlipped;
+}, 2000);  // تغيير كل 2 ثانية
